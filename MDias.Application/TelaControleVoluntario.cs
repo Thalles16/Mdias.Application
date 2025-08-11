@@ -34,7 +34,7 @@ namespace MDias.Application
                 }
                 else
                 {
-                    projetos = projeto.CarregarProjetosDoLider();
+                    projetos = projeto.CarregarTodosProjetos();
                 }
 
                 dgvVoluntario.Columns.Clear();
@@ -167,9 +167,7 @@ namespace MDias.Application
             this.Close();
         }
 
-        private void formTheme1_Click(object sender, EventArgs e)
-        {
-        }
+
 
         private void TelaControleVoluntario_Load(object sender, EventArgs e)
         {
@@ -181,9 +179,7 @@ namespace MDias.Application
             }
         }
 
-        private void dgvVoluntario_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+
 
         private void dgvVoluntario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -223,36 +219,35 @@ namespace MDias.Application
                 {
                     try
                     {
-                        // Lê os valores da linha atualizada
-                        string nome = dgvVoluntario.Rows[e.RowIndex].Cells["Nome"].Value?.ToString();
-                        string cpf = dgvVoluntario.Rows[e.RowIndex].Cells["Cpf"].Value?.ToString();
-                        string habilidade = dgvVoluntario.Rows[e.RowIndex].Cells["Habilidade"].Value?.ToString();
-                        string telefone = dgvVoluntario.Rows[e.RowIndex].Cells["Telefone"].Value?.ToString();
-                        string endereco = dgvVoluntario.Rows[e.RowIndex].Cells["Endereco"].Value?.ToString();
+                        string nome = dgvVoluntario.Rows[e.RowIndex].Cells["Nome"].Value?.ToString() ?? "";
+                        string cpf = dgvVoluntario.Rows[e.RowIndex].Cells["Cpf"].Value?.ToString() ?? "";
+                        string habilidade = dgvVoluntario.Rows[e.RowIndex].Cells["Habilidade"].Value?.ToString() ?? "";
+                        string telefone = dgvVoluntario.Rows[e.RowIndex].Cells["Telefone"].Value?.ToString() ?? "";
+                        string endereco = dgvVoluntario.Rows[e.RowIndex].Cells["Endereco"].Value?.ToString() ?? "";
 
-                        // --- Lê o Projeto (ComboBox) ---
+                        // Projeto
                         object projetoSelecionado = dgvVoluntario.Rows[e.RowIndex].Cells["Projeto"].Value;
-                        int idProjeto = 0;
-                        if (projetoSelecionado != null)
-                            idProjeto = Convert.ToInt32(projetoSelecionado);
+                        int idProjeto = (projetoSelecionado != null && projetoSelecionado != DBNull.Value)
+                                        ? Convert.ToInt32(projetoSelecionado)
+                                        : 0;
 
-                        // Monta o objeto Voluntario
-                        voluntario Voluntario = new voluntario();
-                        Voluntario.Id_Voluntario = idVoluntario;
-                        Voluntario.Nome = nome;
-                        Voluntario.Cpf = cpf;
-                        Voluntario.Habilidade = habilidade;
-                        Voluntario.Telefone = telefone;
-                        Voluntario.Endereco = endereco;
-                        Voluntario.Id_Projeto = idProjeto; // <- agora passando corretamente
+                        voluntario Voluntario = new voluntario
+                        {
+                            Id_Voluntario = idVoluntario,
+                            Nome = nome,
+                            Cpf = cpf,
+                            Habilidade = habilidade,
+                            Telefone = telefone,
+                            Endereco = endereco,
+                            Id_Projeto = idProjeto
+                        };
 
-                        // Atualiza no banco
                         bool sucesso = Voluntario.EditarVoluntario();
 
                         if (sucesso)
                         {
                             MessageBox.Show("Voluntário atualizado com sucesso!");
-                            CarregarVoluntariosComProjetos(); // Recarrega a grid
+                            CarregarVoluntariosComProjetos();
                         }
                         else
                         {
@@ -333,6 +328,13 @@ namespace MDias.Application
             {
                 MessageBox.Show("Erro ao buscar: " + ex.Message);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close();
         }
     }
 }

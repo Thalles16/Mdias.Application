@@ -61,13 +61,16 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
+            pictureBox1 = new PictureBox();
             formTheme1.SuspendLayout();
             crownToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
+            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(guna2HtmlLabel2);
             formTheme1.Controls.Add(guna2HtmlLabel1);
             formTheme1.Controls.Add(btnCadastrarVoluntarios);
@@ -99,7 +102,7 @@
             guna2HtmlLabel2.Location = new Point(375, 100);
             guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(89, 17);
+            guna2HtmlLabel2.Size = new Size(90, 17);
             guna2HtmlLabel2.TabIndex = 29;
             guna2HtmlLabel2.Text = "Ex : 00000000000";
             // 
@@ -110,7 +113,7 @@
             guna2HtmlLabel1.Location = new Point(52, 146);
             guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(120, 17);
+            guna2HtmlLabel1.Size = new Size(121, 17);
             guna2HtmlLabel1.TabIndex = 28;
             guna2HtmlLabel1.Text = "Ex :  Rua machado, 234";
             // 
@@ -346,7 +349,7 @@
             cadastroToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             cadastroToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            cadastroToolStripMenuItem.Size = new Size(180, 22);
+            cadastroToolStripMenuItem.Size = new Size(133, 22);
             cadastroToolStripMenuItem.Text = "Cadastro";
             cadastroToolStripMenuItem.Click += cadastroToolStripMenuItem_Click;
             // 
@@ -355,7 +358,7 @@
             editarLIderToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
             editarLIderToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
             editarLIderToolStripMenuItem.Name = "editarLIderToolStripMenuItem";
-            editarLIderToolStripMenuItem.Size = new Size(180, 22);
+            editarLIderToolStripMenuItem.Size = new Size(133, 22);
             editarLIderToolStripMenuItem.Text = "Editar LIder";
             editarLIderToolStripMenuItem.Click += editarLIderToolStripMenuItem_Click;
             // 
@@ -371,6 +374,17 @@
             thunderControlBox1.Size = new Size(73, 18);
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(28, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // TelaVoluntario
             // 
@@ -389,6 +403,7 @@
             formTheme1.PerformLayout();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -416,5 +431,6 @@
         private ReaLTaiizor.Controls.SpaceButton btnCadastrarVoluntarios;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private PictureBox pictureBox1;
     }
 }

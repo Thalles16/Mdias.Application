@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleProjeto));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleProjeto));
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             dgvProjetos = new Krypton.Toolkit.KryptonDataGridView();
@@ -47,14 +47,17 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
+            pictureBox1 = new PictureBox();
             formTheme1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProjetos).BeginInit();
             crownToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
+            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(txtBuscar);
             formTheme1.Controls.Add(dgvProjetos);
             formTheme1.Controls.Add(crownToolStrip1);
@@ -246,6 +249,17 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(28, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // TelaControleProjeto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -263,6 +277,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvProjetos).EndInit();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -284,5 +299,6 @@
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem editarLIderToolStripMenuItem;
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
+        private PictureBox pictureBox1;
     }
 }

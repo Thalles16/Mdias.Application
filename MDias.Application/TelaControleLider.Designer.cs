@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleLider));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             dtgLider = new Krypton.Toolkit.KryptonDataGridView();
@@ -47,14 +47,17 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
+            pictureBox1 = new PictureBox();
             formTheme1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgLider).BeginInit();
             crownToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
+            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(txtBuscar);
             formTheme1.Controls.Add(dtgLider);
             formTheme1.Controls.Add(crownToolStrip1);
@@ -75,7 +78,7 @@
             // txtBuscar
             // 
             txtBuscar.BorderRadius = 4;
-            txtBuscar.CustomizableEdges = customizableEdges3;
+            txtBuscar.CustomizableEdges = customizableEdges1;
             txtBuscar.DefaultText = "";
             txtBuscar.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtBuscar.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -91,7 +94,7 @@
             txtBuscar.Name = "txtBuscar";
             txtBuscar.PlaceholderText = "Nome";
             txtBuscar.SelectedText = "";
-            txtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtBuscar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtBuscar.Size = new Size(480, 23);
             txtBuscar.TabIndex = 7;
             txtBuscar.KeyDown += txtBuscar_KeyDown;
@@ -247,6 +250,17 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, -2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(28, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // TelaControleLider
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -264,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)dtgLider).EndInit();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -285,5 +300,6 @@
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem editarLIderToolStripMenuItem;
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
+        private PictureBox pictureBox1;
     }
 }

@@ -351,5 +351,12 @@ namespace MDias.Application
                 e.SuppressKeyPress = true;  // Impede o "beep" ao pressionar Enter
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close(); // Fecha a tela atual
+        }
     }
 }

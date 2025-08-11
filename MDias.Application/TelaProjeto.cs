@@ -99,5 +99,12 @@ namespace MDias.Application
                 toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close();
+        }
     }
 }

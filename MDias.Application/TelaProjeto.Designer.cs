@@ -53,13 +53,16 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
+            pictureBox1 = new PictureBox();
             formTheme1.SuspendLayout();
             crownToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
+            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(dtpData);
             formTheme1.Controls.Add(btnCadastrar);
             formTheme1.Controls.Add(txtEndereco);
@@ -289,6 +292,17 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(28, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // TelaProjeto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -305,6 +319,7 @@
             formTheme1.ResumeLayout(false);
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -328,5 +343,6 @@
         private ToolStripMenuItem editarLIderToolStripMenuItem;
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpData;
+        private PictureBox pictureBox1;
     }
 }

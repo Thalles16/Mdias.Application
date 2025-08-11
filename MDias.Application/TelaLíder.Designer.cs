@@ -63,13 +63,16 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
+            pictureBox1 = new PictureBox();
             formTheme1.SuspendLayout();
             crownToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
+            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(guna2HtmlLabel4);
             formTheme1.Controls.Add(guna2HtmlLabel3);
             formTheme1.Controls.Add(guna2HtmlLabel2);
@@ -103,7 +106,7 @@
             guna2HtmlLabel4.Location = new Point(373, 97);
             guna2HtmlLabel4.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(89, 17);
+            guna2HtmlLabel4.Size = new Size(90, 17);
             guna2HtmlLabel4.TabIndex = 31;
             guna2HtmlLabel4.Text = "Ex : 00000000000";
             // 
@@ -114,7 +117,7 @@
             guna2HtmlLabel3.Location = new Point(52, 142);
             guna2HtmlLabel3.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(120, 17);
+            guna2HtmlLabel3.Size = new Size(121, 17);
             guna2HtmlLabel3.TabIndex = 30;
             guna2HtmlLabel3.Text = "Ex :  Rua machado, 234";
             // 
@@ -396,6 +399,17 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(28, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // TelaLíder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -413,6 +427,7 @@
             formTheme1.PerformLayout();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -442,5 +457,6 @@
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private PictureBox pictureBox1;
     }
 }
