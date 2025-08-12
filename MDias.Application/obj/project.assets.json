@@ -1776,23 +1776,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thalles Alex\\.nuget\\packages\\": {},
+    "C:\\Users\\Aluno_Manha\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thalles Alex\\Desktop\\Mdias.Application\\MDias.Application\\MDias.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\MDias.Application.csproj",
       "projectName": "MDias.Application",
-      "projectPath": "C:\\Users\\Thalles Alex\\Desktop\\Mdias.Application\\MDias.Application\\MDias.Application.csproj",
-      "packagesPath": "C:\\Users\\Thalles Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thalles Alex\\Desktop\\Mdias.Application\\MDias.Application\\obj\\",
+      "projectPath": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\MDias.Application.csproj",
+      "packagesPath": "C:\\Users\\Aluno_Manha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno_Manha\\Desktop\\Mdias\\Mdias.Application\\MDias.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Thalles Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aluno_Manha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1801,7 +1801,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

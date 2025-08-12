@@ -49,6 +49,8 @@
             txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
             txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
             editarVToolStripMenuItem = new ToolStripMenuItem();
@@ -61,8 +63,6 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
-            toolStripButton1 = new ToolStripButton();
-            toolStripSeparator3 = new ToolStripSeparator();
             formTheme1.SuspendLayout();
             crownToolStrip1.SuspendLayout();
             SuspendLayout();
@@ -101,7 +101,7 @@
             guna2HtmlLabel2.Location = new Point(375, 100);
             guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(90, 17);
+            guna2HtmlLabel2.Size = new Size(89, 17);
             guna2HtmlLabel2.TabIndex = 29;
             guna2HtmlLabel2.Text = "Ex : 00000000000";
             // 
@@ -112,7 +112,7 @@
             guna2HtmlLabel1.Location = new Point(52, 146);
             guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(121, 17);
+            guna2HtmlLabel1.Size = new Size(120, 17);
             guna2HtmlLabel1.TabIndex = 28;
             guna2HtmlLabel1.Text = "Ex :  Rua machado, 234";
             // 
@@ -143,10 +143,12 @@
             txtHabilidade.FillColor = Color.FromArgb(224, 224, 224);
             txtHabilidade.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHabilidade.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtHabilidade.ForeColor = Color.Black;
             txtHabilidade.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHabilidade.Location = new Point(52, 170);
             txtHabilidade.Margin = new Padding(4);
             txtHabilidade.Name = "txtHabilidade";
+            txtHabilidade.PlaceholderForeColor = Color.Black;
             txtHabilidade.PlaceholderText = "Habilidades";
             txtHabilidade.SelectedText = "";
             txtHabilidade.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -165,10 +167,12 @@
             txtCPF.FillColor = Color.FromArgb(224, 224, 224);
             txtCPF.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtCPF.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCPF.ForeColor = Color.Black;
             txtCPF.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtCPF.Location = new Point(373, 74);
             txtCPF.Margin = new Padding(4);
             txtCPF.Name = "txtCPF";
+            txtCPF.PlaceholderForeColor = Color.Black;
             txtCPF.PlaceholderText = "CPF";
             txtCPF.SelectedText = "";
             txtCPF.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -187,10 +191,12 @@
             txtTelefone.FillColor = Color.FromArgb(224, 224, 224);
             txtTelefone.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTelefone.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTelefone.ForeColor = Color.Black;
             txtTelefone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTelefone.Location = new Point(373, 119);
             txtTelefone.Margin = new Padding(4);
             txtTelefone.Name = "txtTelefone";
+            txtTelefone.PlaceholderForeColor = Color.Black;
             txtTelefone.PlaceholderText = "Telefone ";
             txtTelefone.SelectedText = "";
             txtTelefone.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -209,10 +215,12 @@
             txtEndereco.FillColor = Color.FromArgb(224, 224, 224);
             txtEndereco.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEndereco.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEndereco.ForeColor = Color.Black;
             txtEndereco.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEndereco.Location = new Point(52, 119);
             txtEndereco.Margin = new Padding(4);
             txtEndereco.Name = "txtEndereco";
+            txtEndereco.PlaceholderForeColor = Color.Black;
             txtEndereco.PlaceholderText = "Endereço";
             txtEndereco.SelectedText = "";
             txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -231,10 +239,12 @@
             txtNome.FillColor = Color.FromArgb(224, 224, 224);
             txtNome.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNome.ForeColor = Color.Black;
             txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Location = new Point(52, 74);
             txtNome.Margin = new Padding(4);
             txtNome.Name = "txtNome";
+            txtNome.PlaceholderForeColor = Color.Black;
             txtNome.PlaceholderText = "Nome";
             txtNome.SelectedText = "";
             txtNome.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -254,6 +264,26 @@
             crownToolStrip1.Size = new Size(694, 21);
             crownToolStrip1.TabIndex = 1;
             crownToolStrip1.Text = "crownToolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(44, 18);
+            toolStripButton1.Text = "Home";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 21);
             // 
             // toolStripDropDownButton3
             // 
@@ -373,26 +403,6 @@
             thunderControlBox1.Size = new Size(73, 18);
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
-            // 
-            // toolStripButton1
-            // 
-            toolStripButton1.BackColor = Color.FromArgb(60, 63, 65);
-            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripButton1.ForeColor = Color.FromArgb(220, 220, 220);
-            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(44, 18);
-            toolStripButton1.Text = "Home";
-            toolStripButton1.Click += toolStripButton1_Click;
-            // 
-            // toolStripSeparator3
-            // 
-            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
-            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
-            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
-            toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(6, 21);
             // 
             // TelaVoluntario
             // 

@@ -88,11 +88,13 @@
             txtSenha.FillColor = Color.FromArgb(224, 224, 224);
             txtSenha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSenha.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSenha.ForeColor = Color.Black;
             txtSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSenha.Location = new Point(55, 158);
             txtSenha.Margin = new Padding(4);
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '.';
+            txtSenha.PlaceholderForeColor = Color.Black;
             txtSenha.PlaceholderText = "Senha ";
             txtSenha.SelectedText = "";
             txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -111,10 +113,12 @@
             txtUsuario.FillColor = Color.FromArgb(224, 224, 224);
             txtUsuario.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsuario.ForeColor = Color.Black;
             txtUsuario.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsuario.Location = new Point(55, 100);
             txtUsuario.Margin = new Padding(4);
             txtUsuario.Name = "txtUsuario";
+            txtUsuario.PlaceholderForeColor = Color.Black;
             txtUsuario.PlaceholderText = "Usuário";
             txtUsuario.SelectedText = "";
             txtUsuario.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -162,7 +166,6 @@
             Name = "TelaLogin";
             StartPosition = FormStartPosition.CenterScreen;
             TransparencyKey = Color.Fuchsia;
-            
             formTheme1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).EndInit();
             ResumeLayout(false);

@@ -42,6 +42,7 @@
             txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
             toolStripButton1 = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
             editarVToolStripMenuItem = new ToolStripMenuItem();
@@ -54,7 +55,6 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
-            toolStripSeparator3 = new ToolStripSeparator();
             formTheme1.SuspendLayout();
             crownToolStrip1.SuspendLayout();
             SuspendLayout();
@@ -88,6 +88,7 @@
             dtpData.CustomizableEdges = customizableEdges1;
             dtpData.FillColor = Color.White;
             dtpData.Font = new Font("Segoe UI", 9F);
+            dtpData.ForeColor = Color.Black;
             dtpData.Format = DateTimePickerFormat.Long;
             dtpData.Location = new Point(367, 77);
             dtpData.Margin = new Padding(3, 2, 3, 2);
@@ -126,10 +127,12 @@
             txtEndereco.FillColor = Color.FromArgb(224, 224, 224);
             txtEndereco.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEndereco.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtEndereco.ForeColor = Color.Black;
             txtEndereco.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEndereco.Location = new Point(19, 136);
             txtEndereco.Margin = new Padding(4);
             txtEndereco.Name = "txtEndereco";
+            txtEndereco.PlaceholderForeColor = Color.Black;
             txtEndereco.PlaceholderText = "Endereço";
             txtEndereco.SelectedText = "";
             txtEndereco.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -148,10 +151,12 @@
             txtNome.FillColor = Color.FromArgb(224, 224, 224);
             txtNome.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNome.ForeColor = Color.Black;
             txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNome.Location = new Point(19, 78);
             txtNome.Margin = new Padding(4);
             txtNome.Name = "txtNome";
+            txtNome.PlaceholderForeColor = Color.Black;
             txtNome.PlaceholderText = "Nome";
             txtNome.SelectedText = "";
             txtNome.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -183,6 +188,14 @@
             toolStripButton1.Size = new Size(44, 18);
             toolStripButton1.Text = "Home";
             toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 21);
             // 
             // toolStripDropDownButton3
             // 
@@ -302,14 +315,6 @@
             thunderControlBox1.Size = new Size(64, 18);
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
-            // 
-            // toolStripSeparator3
-            // 
-            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
-            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
-            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
-            toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new Size(6, 21);
             // 
             // TelaProjeto
             // 

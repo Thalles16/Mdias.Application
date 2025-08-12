@@ -110,10 +110,10 @@ namespace MDias.Application
                 // Botão Editar
                 dgvVoluntario.Columns.Add(new DataGridViewButtonColumn()
                 {
-                    HeaderText = "Editar",
-                    Text = "Editar",
+                    HeaderText = "Salvar",
+                    Text = "Salvar",
                     UseColumnTextForButtonValue = true,
-                    Name = "Editar"
+                    Name = "Salvar"
                 });
 
                 // Define a fonte de dados
@@ -215,7 +215,7 @@ namespace MDias.Application
                 }
 
                 // === Botão EDITAR ===
-                else if (columnName == "Editar")
+                else if (columnName == "Salvar")
                 {
                     try
                     {
