@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleLider));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             dtgLider = new Krypton.Toolkit.KryptonDataGridView();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
             editarVToolStripMenuItem = new ToolStripMenuItem();
@@ -47,17 +49,14 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
-            pictureBox1 = new PictureBox();
             formTheme1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgLider).BeginInit();
             crownToolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
-            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(txtBuscar);
             formTheme1.Controls.Add(dtgLider);
             formTheme1.Controls.Add(crownToolStrip1);
@@ -123,13 +122,33 @@
             crownToolStrip1.BackColor = Color.FromArgb(60, 63, 65);
             crownToolStrip1.ForeColor = Color.FromArgb(220, 220, 220);
             crownToolStrip1.ImageScalingSize = new Size(20, 20);
-            crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
+            crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripSeparator3, toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
             crownToolStrip1.Location = new Point(3, 21);
             crownToolStrip1.Name = "crownToolStrip1";
             crownToolStrip1.Padding = new Padding(4, 0, 1, 0);
             crownToolStrip1.Size = new Size(694, 21);
             crownToolStrip1.TabIndex = 1;
             crownToolStrip1.Text = "crownToolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(44, 18);
+            toolStripButton1.Text = "Home";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 21);
             // 
             // toolStripDropDownButton3
             // 
@@ -250,17 +269,6 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, -2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(28, 23);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // TelaControleLider
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -278,7 +286,6 @@
             ((System.ComponentModel.ISupportInitialize)dtgLider).EndInit();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -300,6 +307,7 @@
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem editarLIderToolStripMenuItem;
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
-        private PictureBox pictureBox1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripSeparator toolStripSeparator3;
     }
 }

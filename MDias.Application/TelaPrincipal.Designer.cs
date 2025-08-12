@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             crownToolStrip1 = new ReaLTaiizor.Controls.CrownToolStrip();
+            toolStripButton1 = new ToolStripButton();
             toolStripDropDownButton3 = new ToolStripDropDownButton();
             cadastrarToolStripMenuItem1 = new ToolStripMenuItem();
             editarVToolStripMenuItem = new ToolStripMenuItem();
@@ -44,6 +45,7 @@
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
+            toolStripSeparator3 = new ToolStripSeparator();
             formTheme1.SuspendLayout();
             crownToolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).BeginInit();
@@ -74,13 +76,25 @@
             crownToolStrip1.BackColor = Color.FromArgb(60, 63, 65);
             crownToolStrip1.ForeColor = Color.FromArgb(220, 220, 220);
             crownToolStrip1.ImageScalingSize = new Size(20, 20);
-            crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
+            crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripSeparator3, toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
             crownToolStrip1.Location = new Point(3, 21);
             crownToolStrip1.Name = "crownToolStrip1";
             crownToolStrip1.Padding = new Padding(4, 0, 1, 0);
             crownToolStrip1.Size = new Size(694, 21);
             crownToolStrip1.TabIndex = 8;
             crownToolStrip1.Text = "crownToolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(76, 18);
+            toolStripButton1.Text = "Desconectar";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // toolStripDropDownButton3
             // 
@@ -212,6 +226,14 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 21);
+            // 
             // TelaPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -249,5 +271,7 @@
         private ToolStripDropDownButton toolStripDropDownButton1;
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem editarLIderToolStripMenuItem;
+        private ToolStripButton toolStripButton1;
+        private ToolStripSeparator toolStripSeparator3;
     }
 }

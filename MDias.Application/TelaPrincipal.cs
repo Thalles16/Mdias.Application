@@ -67,5 +67,12 @@ namespace MDias.Application
                 toolStripDropDownButton1.Visible = false; // <- aqui você oculta o item do MenuStrip
             }
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            TelaLogin telaLogin = new TelaLogin();
+            telaLogin.Show();
+            this.Close();
+        }
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaControleVoluntario));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             formTheme1 = new ReaLTaiizor.Forms.FormTheme();
             txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             dgvVoluntario = new Krypton.Toolkit.KryptonDataGridView();
@@ -47,17 +47,16 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             editarLIderToolStripMenuItem = new ToolStripMenuItem();
             thunderControlBox1 = new ReaLTaiizor.Controls.ThunderControlBox();
-            pictureBox1 = new PictureBox();
+            toolStripButton1 = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
             formTheme1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvVoluntario).BeginInit();
             crownToolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // formTheme1
             // 
             formTheme1.BackColor = Color.FromArgb(32, 41, 50);
-            formTheme1.Controls.Add(pictureBox1);
             formTheme1.Controls.Add(txtBuscar);
             formTheme1.Controls.Add(dgvVoluntario);
             formTheme1.Controls.Add(crownToolStrip1);
@@ -123,7 +122,7 @@
             crownToolStrip1.BackColor = Color.FromArgb(60, 63, 65);
             crownToolStrip1.ForeColor = Color.FromArgb(220, 220, 220);
             crownToolStrip1.ImageScalingSize = new Size(20, 20);
-            crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
+            crownToolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripSeparator3, toolStripDropDownButton3, toolStripSeparator1, toolStripDropDownButton2, toolStripSeparator2, toolStripDropDownButton1 });
             crownToolStrip1.Location = new Point(3, 21);
             crownToolStrip1.Name = "crownToolStrip1";
             crownToolStrip1.Padding = new Padding(4, 0, 1, 0);
@@ -250,16 +249,25 @@
             thunderControlBox1.TabIndex = 0;
             thunderControlBox1.Text = "thunderControlBox1";
             // 
-            // pictureBox1
+            // toolStripButton1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(28, 23);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            toolStripButton1.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(44, 18);
+            toolStripButton1.Text = "Home";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripSeparator3.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripSeparator3.Margin = new Padding(0, 0, 2, 0);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 21);
             // 
             // TelaControleVoluntario
             // 
@@ -278,7 +286,6 @@
             ((System.ComponentModel.ISupportInitialize)dgvVoluntario).EndInit();
             crownToolStrip1.ResumeLayout(false);
             crownToolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -300,6 +307,7 @@
         private ToolStripMenuItem editarLIderToolStripMenuItem;
         private ReaLTaiizor.Controls.ThunderControlBox thunderControlBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtBuscar;
-        private PictureBox pictureBox1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripSeparator toolStripSeparator3;
     }
 }

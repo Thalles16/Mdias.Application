@@ -358,5 +358,12 @@ namespace MDias.Application
             telaPrincipal.Show();
             this.Close(); // Fecha a tela atual
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.Show();
+            this.Close();
+        }
     }
 }
